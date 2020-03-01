@@ -102,7 +102,7 @@ const getSortedUniqueSkills = users => users.reduce(function(skills, user){
 return skills;
 }, []).reduce(function(uniq, item) {
   return uniq.includes(item) ? uniq : [...uniq, item];
-}).sort();
+},[]).sort();
 
 console.log(getSortedUniqueSkills(users));
 // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
